@@ -56,12 +56,21 @@ int SumN(int n)
     }
     return Sum;
 }
-
+// 4.WAf to calculate factorial of numbers
+int fact(int n){
+    int factorial = 1;
+    for(int i=1;i<=n;i++){
+        factorial *=i;
+    }
+    return factorial;
+}
 int main()
 {
     int num;
     cout << "Enter a nunmber: ";
     cin >> num;
     cout << "Sum of numbers from 1 to " << num << " " << "is: " << SumN(num) << endl;
+
+    cout<<"factorial of "<<num<<" "<<"is: "<<fact(num);
     return 0;
 }
